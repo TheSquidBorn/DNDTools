@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">DNDTools</string>
+    <string name="app_name">DnDTools</string>
+    <string name="attack_button">Go, my boys!</string>
 </resources>
