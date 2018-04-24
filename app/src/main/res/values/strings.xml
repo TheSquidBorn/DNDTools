@@ -1,4 +1,16 @@
 <resources>
+    <!--Global-->
     <string name="app_name">DnDTools</string>
+
+    <!--Main Buttons-->
+    <string name="army_attack_button">Army Attack</string>
+    <string name="army_save_button">Army Save</string>
+    <string name="settings_button">Settings</string>
+
+    <!--Attack Tool-->
     <string name="attack_button">Go, my boys!</string>
+
+    <!--Save Tool-->
+    <string name="advantageSwitch">Advantage</string>
+    <string name="result">Result</string>
 </resources>
