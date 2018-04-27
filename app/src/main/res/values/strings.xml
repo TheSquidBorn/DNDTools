@@ -5,6 +5,7 @@
     <string name="result">Result</string>
     <string name="boysText">boys</string>
     <string name="bonusText">Bonus</string>
+    <string name="Version">1.7.3</string>
 
     <!--Main Buttons-->
     <string name="army_attack_button">Army Attack</string>

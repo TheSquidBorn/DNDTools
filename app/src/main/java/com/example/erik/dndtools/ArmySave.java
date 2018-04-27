@@ -62,7 +62,7 @@ public class ArmySave extends AppCompatActivity {
 
                     if (roll0 == 20){
                         save++;
-                    }else if(roll0 > dc){
+                    } else if(roll0 > dc) {
                         save++;
                     } else {
                         fail++;
