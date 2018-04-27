@@ -7,43 +7,43 @@
     tools:context=".ArmySave">
 
     <EditText
-        android:id="@+id/boysButton"
+        android:id="@+id/boysText"
         android:layout_width="wrap_content"
         android:layout_height="47dp"
         android:layout_marginLeft="32dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
         android:ems="10"
-        android:hint="boys"
+        android:hint="@string/boysText"
         android:inputType="number"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/DCButton"
+        android:id="@+id/dcText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="32dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
         android:ems="10"
-        android:hint="DC"
+        android:hint="@string/dcText"
         android:inputType="number"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/boysButton" />
+        app:layout_constraintTop_toBottomOf="@+id/boysText" />
 
     <EditText
-        android:id="@+id/bonusButton"
+        android:id="@+id/bonusText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="32dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
         android:ems="10"
-        android:hint="Bonus"
+        android:hint="@string/bonusText"
         android:inputType="number"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/DCButton" />
+        app:layout_constraintTop_toBottomOf="@+id/dcText" />
 
     <Switch
         android:id="@+id/advantageSwitch"
@@ -55,9 +55,9 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
         android:text="@string/advantageSwitch"
-        app:layout_constraintEnd_toEndOf="@+id/bonusButton"
+        app:layout_constraintEnd_toEndOf="@+id/bonusText"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bonusButton" />
+        app:layout_constraintTop_toBottomOf="@+id/bonusText" />
 
     <Button
         android:id="@+id/saveButton"
@@ -66,7 +66,8 @@
         android:layout_marginLeft="32dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
-        android:text="Button"
+        android:text="@string/saveButton"
+        android:textAllCaps="false"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/advantageSwitch" />
 
@@ -76,7 +77,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:gravity="center_horizontal"
-        android:text="Result"
+        android:text="@string/result"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

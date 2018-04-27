@@ -1,6 +1,5 @@
 package com.example.erik.dndtools;
 
-import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -23,16 +22,16 @@ public class ArmySave extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 EditText boysText = findViewById(R.id.boysText);
-                EditText dcText = findViewById(R.id.DCButton);
+                EditText dcText = findViewById(R.id.dcText);
                 EditText bonusText = findViewById(R.id.bonusText);
 
-                TextView resultText = findViewById(R.id.resultTextView);
+                TextView resultText = findViewById(R.id.resultText);
 
                 Switch advantageSwitch = findViewById(R.id.advantageSwitch);
 
-                int boys = 0;
-                int dc = 0;
-                int bonus = 0;
+                int boys;
+                int dc;
+                int bonus;
                 int save = 0;
                 int fail = 0;
                 int roll0;
@@ -40,13 +39,13 @@ public class ArmySave extends AppCompatActivity {
 
                 String result;
 
-                boolean advantage = false;
+                boolean advantage;
 
                 Random rng = new Random();
 
-                boys = Integer.parseInt(boysText.toString());
-                dc = Integer.parseInt(dcText.toString());
-                bonus = Integer.parseInt(bonusText.toString());
+                boys = Integer.parseInt(boysText.getText().toString());
+                dc = Integer.parseInt(dcText.getText().toString());
+                bonus = Integer.parseInt(bonusText.getText().toString());
 
                 advantage = advantageSwitch.isChecked();
 
@@ -68,9 +67,10 @@ public class ArmySave extends AppCompatActivity {
                     } else {
                         fail++;
                     }
+                    boys--;
                 }
 
-                result = ("Saves " + save + " Fails " + fail);
+                result = ("Saves: " + String.valueOf(save) + " Fails: " + String.valueOf(fail));
 
                 resultText.setText(result);
             }

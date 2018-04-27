@@ -1,6 +1,10 @@
 <resources>
     <!--Global-->
     <string name="app_name">DnDTools</string>
+    <string name="dcText">DC</string>
+    <string name="result">Result</string>
+    <string name="boysText">boys</string>
+    <string name="bonusText">Bonus</string>
 
     <!--Main Buttons-->
     <string name="army_attack_button">Army Attack</string>
@@ -12,5 +16,5 @@
 
     <!--Save Tool-->
     <string name="advantageSwitch">Advantage</string>
-    <string name="result">Result</string>
+    <string name="saveButton">Stay strong, my boys!</string>
 </resources>
