@@ -5,12 +5,14 @@
     <string name="result">Result</string>
     <string name="boysText">boys</string>
     <string name="bonusText">Bonus</string>
-    <string name="Version">1.7.3</string>
+    <string name="Version">1.7.4</string>
 
     <!--Main Buttons-->
     <string name="army_attack_button">Army Attack</string>
     <string name="army_save_button">Army Save</string>
     <string name="settings_button">Settings</string>
+    <string name="never_split_the_party">NEVER SPLIT THE PARTY</string>
+
 
     <!--Attack Tool-->
     <string name="attack_button">Go, my boys!</string>
