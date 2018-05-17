@@ -19,7 +19,6 @@ public class ArmyToolActivity extends AppCompatActivity {
         setContentView(R.layout.activity_armytool);
 
         Button goButton = findViewById(R.id.goButton);
-        Button acButton = findViewById(R.id.acButton);
 
         goButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -134,15 +133,6 @@ public class ArmyToolActivity extends AppCompatActivity {
                 } catch (NumberFormatException e) {
                     return false;
                 }
-            }
-        });
-
-        acButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent startIntent = new Intent(getApplicationContext(), ac_Activity.class);
-
-                startActivity(startIntent);
             }
         });
     }

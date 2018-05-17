@@ -5,13 +5,14 @@
     <string name="result">Result</string>
     <string name="boysText">boys</string>
     <string name="bonusText">Bonus</string>
-    <string name="Version">1.7.4</string>
+    <string name="Version">1.7.5</string>
 
     <!--Main Buttons-->
     <string name="army_attack_button">Army Attack</string>
     <string name="army_save_button">Army Save</string>
     <string name="settings_button">Settings</string>
     <string name="never_split_the_party">NEVER SPLIT THE PARTY</string>
+    <string name="stop">stop</string>
 
 
     <!--Attack Tool-->
@@ -20,4 +21,7 @@
     <!--Save Tool-->
     <string name="advantageSwitch">Advantage</string>
     <string name="saveButton">Stay strong, my boys!</string>
+
+    <!--Settings-->
+    <string name="skin">Emma Mode</string>
 </resources>
