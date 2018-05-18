@@ -17,8 +17,6 @@ public class MainActivity extends AppCompatActivity {
         Button ArmyTool = findViewById(R.id.armyToolButton);
         Button SaveTool = findViewById(R.id.armySaveButton);
         Button SplitTool = findViewById(R.id.splitButton);
-        Button stopButton = findViewById(R.id.stopButton);
-
 
         final MediaPlayer mp = MediaPlayer.create(this, R.raw.neversplit);
 
@@ -41,19 +39,14 @@ public class MainActivity extends AppCompatActivity {
         SplitTool.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                mp.seekTo(0);
-                mp.start();
-
+                if (mp.isPlaying()){
+                    mp.pause();
+                    mp.seekTo(0);
+                }
+                else {
+                    mp.start();
+                }
             }
         });
-
-        stopButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                mp.pause();
-            }
-        });
-
      }
 }
